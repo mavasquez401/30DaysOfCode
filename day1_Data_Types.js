@@ -14,7 +14,7 @@ function main(i,d,s) {
 
     // The 's' variable above should be printed first.
     console.log(s2 + s)
-    return
+
 }
 // Prints out data
 main(5,3.6,"is the best platform to learn code!");
