@@ -10,8 +10,10 @@ this.amIOld=function(){
    // Do some computations in here and print out the correct statement to the console
     if (this.age < 13) {
         console.log("You are young.")
+    // prints you are a teenager if number between 13 and 18
     } else if (this.age >= 13 && this.age < 18) {
         console.log("You are a teenager.")
+    // print you are old if over 18
     } else {
         console.log("You are old.")
     }
