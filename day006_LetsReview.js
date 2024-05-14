@@ -25,7 +25,8 @@ function processData(input) {
         console.log(evenIndex + " " + oddIndex);
     }
 } 
-
+// Code below was created by HackerRank
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 process.stdin.resume();
 process.stdin.setEncoding("ascii");
 _input = "";
