@@ -20,5 +20,34 @@ function readLine(): string {
 }
 
 function main() {
-    // Enter your code here
+    class Difference {
+        private __elements: number[];
+        public maximumDifference: number;
+
+        constructor(elements: number[]) {
+            this.__elements = elements;
+            this.maximumDifference = 0;
+        }
+
+        computeDifference(): void {
+            let minElement = Math.min(...this.__elements);
+            let maxElement = Math.max(...this.__elements);
+            this.maximumDifference = Math.abs(maxElement - minElement);
+        }
+    }
+
+    // Read the number of elements
+    const n = parseInt(readLine().trim(), 10);
+    
+    // Read the elements
+    const elements = readLine().split(' ').map(Number);
+    
+    // Create an instance of Difference with the elements array
+    const difference = new Difference(elements);
+    
+    // Compute the difference
+    difference.computeDifference();
+    
+    // Print the maximum difference
+    console.log(difference.maximumDifference);
 }
